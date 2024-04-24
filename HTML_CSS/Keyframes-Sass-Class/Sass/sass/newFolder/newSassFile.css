@@ -1,0 +1,52 @@
+.container {
+  height: 400px;
+  width: 600px;
+  border: 1px solid black;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  padding: 15px;
+  color: red;
+}
+
+.mixin-form {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.basic1, .basic4, .basic3 {
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.basic2 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  background-color: red;
+}
+
+.basic3 {
+  background-color: rgb(28, 190, 63);
+}
+
+.basic4 {
+  background-color: rgb(28, 58, 190);
+}/*# sourceMappingURL=newSassFile.css.map */

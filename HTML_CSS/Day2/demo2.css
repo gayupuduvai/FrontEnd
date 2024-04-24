@@ -1,0 +1,31 @@
+h3 {
+  color: crimson;
+}
+p {
+  color: rgb(12, 3, 3);
+  font-size: 14px;
+  font-style: roman;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.Head3 {
+  color: rgb(231, 74, 22);
+  font-style: italic;
+}
+.reset_btn {
+  background-color: rgb(235, 9, 205);
+  color: honeydew;
+  font-style: italic;
+}
+#Head2 {
+  color: black;
+}
+.bold_tag,
+strong {
+  color: chartreuse;
+  font-size: 15px;
+}
+* {
+  font-variant: normal;
+  border: 1ch;
+  background-color: lightslategray;
+}

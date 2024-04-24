@@ -1,0 +1,24 @@
+p {
+  color: brown;
+  font-size: 25px;
+}
+.my-heading {
+  color: blue;
+}
+.login-btn {
+  background-color: green;
+  color: white;
+}
+#h3_tag {
+  color: red;
+}
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: black; */
+}
+b,
+strong {
+  color: blue;
+}

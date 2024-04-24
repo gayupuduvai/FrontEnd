@@ -1,0 +1,72 @@
+.Chapter {
+    .context-head{
+        text-align: center;
+        color: rgb(6, 42, 88);
+        font-size: 50px;
+        max-width: 1500px;
+        font-family: "Raleway", sans-serif;
+    }
+    .context-subdiv {
+        display: flex;
+        justify-content: center;
+    }
+    .index-list {
+        color: rgb(6, 42, 88);
+        font-weight: 600; 
+        font-size: 17px;
+        width: 300px;
+    }
+    .index-text {
+        width: 800px;
+        height: 300px;
+        gap: 200px;
+        overflow: scroll;
+        
+    }
+    .index-brief {
+        background-color: rgb(240, 242, 252);
+        padding: 20px;
+        margin-bottom: 100px;
+    }
+    .index-heading {
+        color: rgb(6, 42, 88);
+        font-size: 25px;
+    }
+    .index-para {
+        color: rgb(118, 125, 128);
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .ser_title{
+        text-align: center;
+    }
+    .ser-span {
+        color: #17b978;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .ser-head {
+        color: rgb(6, 42, 88);
+        font-size: 33px;
+        font-weight: 700;
+    }
+    .ser_cards {
+        display: flex;
+        gap: 15px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .cards {
+        background-color: aliceblue;
+        text-align: center;
+        padding: 20px;
+    }
+    .ser-strong {
+        color: rgb(6, 42, 88);
+        font-size: 20px;
+    }
+    .ser-para {
+        color: rgb(138, 146, 153);
+        line-height: 28px;
+    }
+}

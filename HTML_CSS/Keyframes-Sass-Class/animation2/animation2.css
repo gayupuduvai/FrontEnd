@@ -1,0 +1,33 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    animation: myAnima 5s ease-in-out infinite alternate;
+}
+@keyframes myAnima {
+    0%{
+        left: 0%;
+    }
+    50%{
+        background-color: aqua;
+        border-radius:20%;
+        top: 40%;
+    }
+    60%{
+        top: 60%;
+        font-size: 30px;
+        color: violet;
+    }
+    100%{
+        background-color: brown;
+        border-radius: 50%;
+        left: 90%;
+    }
+}
+
+/*   linear - speed maintain
+     ease   - slow when end
+     ease-in - starting slow
+     ease-out - ending slow
+     ease-in-out - slow - high - slow */

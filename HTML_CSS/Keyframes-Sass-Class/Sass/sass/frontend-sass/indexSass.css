@@ -1,0 +1,24 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: #801c00;
+}
+
+.para {
+  color: #801c00;
+  background-color: black;
+  font-size: 40px;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  padding: 20px;
+  color: rgb(76, 0, 255);
+}
+
+p {
+  color: aqua;
+}/*# sourceMappingURL=indexSass.css.map */

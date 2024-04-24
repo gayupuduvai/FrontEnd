@@ -1,0 +1,38 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+
+    .logo {
+        font-weight: 900;
+        font-size: 25px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .logo-span {
+        color: rgb(72, 180, 153);
+        font-weight: 600;
+        font-size: 30px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .menu {
+        display: inline-flex;
+        float: right;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(29, 42, 117);
+        gap: 20px;
+        padding-top: 11px;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration-line: underline;
+        text-decoration-color: rgb(24, 134, 74);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+        transition: underline 0.2s ease-in-out;
+    }
+}

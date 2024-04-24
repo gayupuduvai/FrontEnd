@@ -1,0 +1,27 @@
+.myBox{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    animation: myAnimation 5s linear infinite alternate;
+}
+@keyframes myAnimation{
+    0%{
+        left: 0%;
+    } 
+    50%{
+        left: 30%;
+        top: 30%;
+        background-color: blue;
+    }
+    70%{
+        left: 60%;
+        background-color: blueviolet;
+        border-radius: 30%;
+    }
+    100%{
+        left: 80%;
+        background-color: black;
+        border-radius: 50%;
+    }
+}

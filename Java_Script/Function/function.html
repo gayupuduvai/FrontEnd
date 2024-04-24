@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JAVASCRIPT</title>
+    <script src="./function.js"></script>
+</head>
+
+<body>
+    <script>
+
+        //1.  Class topics about function
+        function myDecl() {            //function DEFINITION
+            let a = 5, b = 10;
+            let add = a + b;
+            console.log(add, "function decalartion");
+        }
+        myDecl()                          //function CALL
+
+        // 2. function arguments and parameters
+        function ArgPara(a1, a2) {          //function PARAMETERS
+            var result = a1 * a2;
+            console.log(result, "argument and parameter");
+        }
+        ArgPara(30, 20)                     //function ARGUMENTS
+
+        // 3. Annonymous function
+        var AnnonFunc = function () {
+            var a = 50, b = 10;
+            var res = a - b;
+            console.log(res, "Annonymous function");
+        }
+        AnnonFunc()
+
+        // function add(UserName, n1, n2) {
+        //     var add = n1 + n2;
+        //     console.log(UserName);
+        //     console.log(add, "Addition");
+
+        // }
+        // let User_name = prompt("Enter the Name");
+        // add(User_name, 30, 20)
+
+        //4. RETURN
+        function mulFun(i, j) {
+            var addData = i + j;
+            var subData = i - j;
+            var mulData = i * j;
+            return {
+                addition: addData,
+                subraction: subData,
+                multiplication: mulData
+            };
+        }
+        var resulttoMul = mulFun(13, 13);
+        console.log(resulttoMul, "RETURN");
+
+        // 5. Function Expersion     
+        // Function expersion and annonymus function are more over the same.
+        var functionExper = function () {
+            console.log("Hello World!!!");
+        }
+        functionExper();
+
+        // 6. IIF (Immediately Invoked Function)
+        (function () {
+            console.log("Immediately Invoked Function");
+        })();
+
+
+        // example:
+        var multi = (function () {
+            var x = 10;
+            var y = 20;
+            return x * y;
+        })();
+        console.log(multi, "multiplication");
+
+        // IIF used to create a private variables:
+        var counter = (function () {
+            var count = 0;
+            return {
+                increment: function () {
+                    count++;
+                },
+                decrement: function () {
+                    count--;
+                },
+                getCount: function () {
+                    return count;
+                }
+            };
+        })();
+        counter.increment();
+        counter.increment();
+        counter.increment();
+        console.log(counter.getCount(), "INCREMENT");
+        console.log(counter.count);
+        counter.decrement();
+        console.log(counter.getCount(), "DECREMENT");
+        // console.log(counter.count);
+
+
+        // 7. ARROW function
+
+        hello = function () {
+            return "Hello World!";
+        }
+        console.log(hello(), "BEFORE arrow function");
+
+        msg = () => {
+            return "Hello World!!!";
+        }
+        console.log(msg(), "AFTER arrow function");
+
+        // 8. Arrow Functions Return Value by Default:
+        names = () => "Sashya Kumar";
+        console.log(names(), "Arrow function without curly bracket");
+
+
+        // 9. Arrow Function With Parameters:
+        name1 = (val) => "Priya Kumar" + val;
+        console.log(name1(" IS5617"), "With Parameters");
+
+        // 10. Arrow Function Without Parentheses:
+        name2 = phone => "Anand Raj" + " " + phone;
+        console.log(name2(9523647824), "Without Parentheses");
+
+
+        // 11. this
+        function Person() {
+            this.name = 'Jack';
+            console.log(this);
+
+        }
+        let person1 = new Person();
+        console.log(person1.name);
+
+
+        // 12. this Inside Object Method
+        const details = {
+            name: 'Jack',
+            age: 25,
+            // this inside method
+            // this refers to the object itself
+            greet() {
+                console.log(this);
+                console.log(this.name);
+            }
+        }
+        details.greet();
+
+        // 13. this Inside Global Scope
+        let m = this;
+        console.log(m, "window");
+        this.name = "Venkat";
+        console.log(window.name);
+    </script>
+</body>
+
+</html>

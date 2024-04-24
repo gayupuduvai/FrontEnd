@@ -1,0 +1,23 @@
+.main-frame {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.box {
+    /* border: 2px black solid;
+    padding: 50px; */
+
+}
+
+.box1 {
+    grid-row: span 2;
+}
+
+.box2 {
+    grid-column: span 2;
+}
+
+.box9 {
+    grid-column: span 2;
+}

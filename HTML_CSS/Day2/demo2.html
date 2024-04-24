@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo2.css">
+    <style>
+        h4 {
+            color: brown;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- I. Inline, Internal, External -->
+    <!-- inline css -->
+    <h3>Inline Example</h3>
+    <p style="color: blue;font-size: 18px;font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Facere at voluptatum nulla sequi quibusdam. Natus consequatur totam doloribus
+        facere repellat, velit sed aliquid ab corrupti cupiditate, omnis, alias magni tempore.</p>
+
+    <!-- internal css -->
+    <h3>Internal Example</h3>
+    <h4>Fixing style in meta</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat magni voluptatum illum commodi
+        necessitatibus eveniet cupiditate. Pariatur, illum accusantium! Aut, possimus eum. Odit quo, numquam nostrum
+        provident perspiciatis facilis.</p>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro illo repellendus, explicabo libero
+        architecto veniam odit nobis, autem laborum molestias? Quisquam iure eum distinctio laudantium aperiam error rem
+        eligendi.</span>
+    <!-- external css -->
+    <h3>External Example</h3>
+    <p>Linking .css and .html files externally in meta.</p>
+    <!-- II. CSS Selectors -->
+    <ol>
+        <li>Element selector</li>
+        <li>class selector</li>
+        <li>id selector</li>
+        <li>group selector</li>
+        <li>universal selector</li>
+    </ol>
+    <!-- 1. Element Selectors -->
+    <p>ELEMENT SELECTOR: Styling specific elements like para, head, etc.</p>
+    <!-- 2. Class Selector -->
+    <h3 class="Head3">Class Selectors</h3>
+    <button type="reset" class="reset_btn">Reset</button>
+    <!-- 3. ID selector -->
+    <h2 id="Head2">ID Selector</h3>
+        <p>denoted by # in .css</p>
+        <!-- 4. Group Selector -->
+        <p>more than one elements can be styled</p>
+        <b class="bold_tag">this is bold tag</b><br>
+        <strong>this is strong tag</strong>
+        <!-- 5. Universal selector -->
+
+        <p>Universal Selectors: Style the elements or anything used commanly. denoted by *</p>
+        <label>Phone number:</label><input type="tel" name="Phone">
+</body>
+
+</html>

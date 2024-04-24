@@ -1,0 +1,16 @@
+.box {
+     border: 5px double rgb(72, 24, 117);
+     background-color: rgb(235, 228, 243);
+}
+.main-frame {
+    display: grid;
+   /* grid-template-columns: repeat(3, 1fr); */
+   row-gap: 20px;
+   column-gap: 15px;
+   /* grid-template-columns: 300px 600px 900px; */
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   /* grid-template-rows: repeat(3, 1fr); */
+   grid-template-rows: 200px 400px 600px;
+   
+
+}

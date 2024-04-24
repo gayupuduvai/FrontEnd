@@ -1,0 +1,47 @@
+.mainframe {
+    display: flex;
+    gap: 34px;
+}
+.inner-container {
+    height: 315px;
+    width: 235px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+.fa {
+    margin-left: 75px;
+}
+.heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content {
+    text-align: center;
+    /* font-weight: bold; */
+    /* color: black; */
+}
+.button {
+    background: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+    width: 167px;
+}
+.button1 {
+    background: white;
+    color: rgb(218, 80, 156);
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 25px;
+    width: 167px;
+    border: none;
+}
+#instagram {
+    background-color: rgb(218, 80, 156);
+    color: white;
+    border: none;
+}

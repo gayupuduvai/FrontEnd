@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Operators</title>
+    <script src="./JS_Operators.js"></script>
+</head>
+
+<body>
+    <script>
+        // Assignment Operators : Assignment operators are used to assign values to variables.
+        var name = "Gayathri";
+        let a;
+        a = 10; //   Assignment operator   =
+        console.log(a, "a")
+        console.log(name, "name")
+        console.log(a += 5, "add") //Addition assignment, +=, a=a+5
+        console.log(a -= 3, "sub") //Subtraction Assignment, -=, a=a-3
+        console.log(a *= 2, "multiply") //Multiplication Assignment, *=, a=a*2
+        console.log(a /= 2, "div") //Division Assignment, /=, a=a/2
+        console.log(a %= 2, "remin") //Remainder Assignment, %=, a=a%2
+        var b = 20;
+        console.log(b **= 3, "expo") //Exponentiation Assignment, **=, b=b**3
+
+        // Arithmetic Operators: Arithmetic operators are used to perform arithmetic calculations.
+
+        const number = 3 + 5; //8
+        console.log(number, "arithmetic")
+
+        var a1 = 30;
+        var a2 = 60;
+
+        console.log(a1 + a2, "addition")
+        console.log(a1 - a2, "sub")
+        console.log(a1 * a2, "multiply")
+        console.log(a1 / a2, "div")
+        console.log(a1 % a2, "remainder")
+        console.log(++a1, "increament") //increment
+        // console.log(a1++, "increament")
+        console.log(--a2, "decrement") //decrement
+        let m = 8;
+        let n = 2;
+        console.log(m ** n, "expo-power") //exponentiation
+
+
+        //Comparison operators: Comparison operators compare two values and return a boolean value, either true or false. 
+
+        const p = 10,
+            q = 20;
+        console.log(p == q, "eqaul to") // equal operator
+        var z1 = 10,
+            z2 = 10;
+        console.log(z1 == z2, "equal to") // equal operator
+        let t1 = 15,
+            t2 = 20;
+        console.log(t1 != t2, "not equal") // not equal operator
+        var s1 = 20,
+            s2 = 20;
+        console.log(s1 != s2, "not equal") // not equal operator
+        let b1 = 30,
+            b2 = "data";
+        console.log(b1 === b2, "===")
+        let c1 = 10,
+            c2 = 15;
+        console.log(c1 === c2, "===")
+        console.log(c1 !== c2, "not equal")
+        console.log(c1 < c2, "lesser than")
+        console.log(c1 > c2, "greater than")
+        console.log(c1 <= c2, "greator than or equal to")
+        console.log(c1 >= c2, "lesser than or equal to")
+
+        // Logical Operators: Logical operators perform logical operations and return a boolean value, either true or false.
+
+        var d = 10,
+            e = 20;
+        console.log(d < 15 && d > 6, "AND logic true logic") //both should be true its true, otherwise it will false
+        console.log(d <= 8 && e >= 15, "AND-fasle logic condition")
+
+        let f = 18,
+            g = 34;
+
+        console.log(f > 15 || g < 30, "OR-true logic condition") //either one is true its true
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    left: 0;
+    animation: boxani 1s ease-in-out infinite alternate ;
+}
+@keyframes boxani {
+    0%{
+        background-color: red;
+        border-radius: 0%;
+    }
+   100%{
+    background-color: green;
+    border-radius: 50%;
+    }
+}

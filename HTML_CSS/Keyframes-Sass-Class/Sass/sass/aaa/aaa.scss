@@ -1,0 +1,7 @@
+@import '../aaa/importVar.scss';
+.my-box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: $color;
+}

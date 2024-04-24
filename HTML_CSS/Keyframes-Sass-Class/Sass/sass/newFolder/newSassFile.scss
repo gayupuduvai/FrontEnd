@@ -1,0 +1,56 @@
+
+@import '../newFolder//variableFile.scss';
+
+.container{
+
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color:$background ;
+}
+nav{
+    ul{
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        padding: 15px;
+        color: red;
+    }
+}
+@mixin mypara{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+.mixin-form{
+    @include mypara;
+}
+
+// inheritance
+.basic1{
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+}
+.basic2{
+    @include mypara;
+    // @extend .basic1;
+    background-color: red;
+}
+
+.basic3{
+    @extend .basic1;
+    background-color: rgb(28, 190, 63);
+}
+.basic4{
+    @extend .basic1;
+    background-color: rgb(28, 58, 190);
+}

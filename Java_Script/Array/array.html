@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array JS</title>
+    <script src="./array.js"></script>
+</head>
+
+<body>
+    <script>
+        // Filter method
+        var list = [
+            { name: "Priya", age: 23 },
+            { name: "Kayal", age: 29 },
+            { name: "Ajay", age: 15 },
+            { name: "Kumar", age: 18 },
+        ];
+        let details = list.filter((studentData) => studentData.name == "Kayal");
+        console.log(details, "Student details");
+
+        //map
+        var values = [2, 4, 8, 10, 12];
+        var mappedValues = values.map((num) => {
+            return num + 3;
+        });
+        console.log(mappedValues, "Mapped Values");
+
+        // Spread Operator
+
+        var obj1 = { name: "Janani", age: 29 };
+        var obj2 = { address: "no. 5, akfhaj street, dhgafgaw", email: "gaahjska@gmail.com" };
+        var obj3 = { ...obj1, ...obj2 };
+        console.log(obj3, "Spread Operator");
+
+        let juices = ["Freshjuice", "softdrinks", "Milkshakes"];
+        let all = juices;
+        all.push("Thikshakes", "Falooda");
+        console.log(all);
+        console.log(juices, "JUICES");
+    </script>
+</body>
+
+</html>

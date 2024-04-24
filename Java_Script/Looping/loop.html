@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping in JS</title>
+    <link rel="stylesheet" href="loop.css">
+    <script src="./loop.js"></script>
+</head>
+
+<body>
+    <h3>I. Break and Continue using for loop</h3>
+    <h4>1. Break</h4>
+    <p id="break"></p>
+    <h4>2. Continue</h4>
+    <p id="continue"></p>
+    <h3>II. Print numbers from 1 to 30</h3>
+    <h3>III. Sum of numbers from 1 to 20 using while loop</h3>
+    <script>
+        // 1. Print all the numbers from 1 to 15:
+        // for (j=1; j<=15; j++) {
+        //     console.log(j);
+        // }
+
+        // 2. Print ODD numbers from 6 to 29:
+
+
+        // for (i=6; i<=29; i++) {
+        //     if (i %2 !==0){
+        //         console.log(i,"odd");
+        //     }
+        // }
+
+        // break and continue using for loop
+        // 1. break 
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) {
+                break;
+            }
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("break").innerHTML = text;
+
+        // 2. continue
+        let ContinueText = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) {
+                continue;
+            }
+            ContinueText += "The number is " + i + "<br>";
+        }
+        document.getElementById("continue").innerHTML = ContinueText;
+        // // do and while loop
+        // // 1. Print numbers from 1 to 30
+        var num = 1;
+        while (num <= 30) {
+            console.log(num, "numbers from 1 to 30");
+            num += 1;
+        }
+    </script>
+</body>
+
+</html>

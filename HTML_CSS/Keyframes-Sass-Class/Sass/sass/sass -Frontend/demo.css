@@ -1,0 +1,27 @@
+.main-con {
+  border: 1px solid gray;
+  height: 400px;
+  width: 500px;
+}
+
+.inner-box {
+  background-color: rgb(19, 209, 235);
+  height: 100px;
+  width: 100px;
+}
+
+.Box1, .Box3, .Box2 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  padding: 20px;
+}
+
+.Box2 {
+  background-color: rgb(0, 255, 76);
+}
+
+.Box3 {
+  background-color: blue;
+  font-size: 30px;
+}/*# sourceMappingURL=demo.css.map */

@@ -1,0 +1,65 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    position: absolute;
+    animation: myanime 5s ease-in-out;
+}
+
+@keyframes myanime{
+    0%{
+        left: 0%;
+    }
+    50%{
+        background-color: red;
+        left: 20%;
+    }
+    100%{
+        background-color: blue;
+        left: 80%;
+    }
+}
+
+
+/* .box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    animation: boxanimation 5s  infinite alternate;
+}
+
+@keyframes boxanimation{
+    0%{
+        background-color: aliceblue;
+        border-radius: 0%;
+        left: 0%;
+    }
+    100%{
+        background-color: brown;
+        border-radius: 50%;
+        left: 60%;
+    }
+} */
+
+/* .box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    animation: boxanimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes boxanimation{
+    0%{
+      left: 0%;
+
+    }
+    20%{
+        top:50%;
+    }
+    100%{
+        left: 80%;
+  
+    }
+} */

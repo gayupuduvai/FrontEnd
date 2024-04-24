@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array with Loop</title>
+    <script src="./array_loop.js"></script>
+</head>
+
+<body>
+    <p>Array with loop tasks:</p>
+    <p id="validation1"></p>
+    <p id="validation2"></p>
+    <script>
+        // TERNARY tasks
+        // 1. Check if a number is even or odd:
+        // let number=prompt("Enter the number:");
+        // var comparison=(number %2==0)?`${number} is an EVEN number`:`${number} is an ODD number`;
+        // console.log(comparison);
+
+        // 2. Check if a number is positive, negative, or zero:
+        // var value=prompt("Enter an value:");
+        // let validate=(value > 0)?`${value} is a postive number`:((value<0)?`${value} is a negative number`:`${value} is ZERO`);
+        // document.getElementById("validation1").innerHTML=validate;
+
+        // 3. Check if a number is divisible by both 3 and 5 
+        // var a=prompt("Enter a number:");
+        // let validate_a=(a % 3 ===0 && a % 5 ===0) ? `${a} is divisible by 3 and 5` : `${a} is not divisible by 3 and 5`;
+        // document.getElementById("validation2").innerHTML=validate_a;
+
+        // 4. Find the maximum of two numbers:
+        // let b = prompt("Enter the value of b:");
+        // let c = prompt("Enter the value of c:");
+        // var max_num = (b>c) ? `${b} is greater than ${c}` : `${c} is greater ${b}`;
+        // console.log(max_num, "maximum of two numbers");
+
+        // 5. Check if a year is a leap year:
+        // var year=prompt("Enter the year:");
+        // let leap_Year = (year % 4 ===0 && year % 100 !==0) ? `${year} is a leap year` : `${year} is not a leap year`;
+        // console.log(leap_Year);
+
+        // 6. Check if a string is empty or not:
+        // let string = "";
+        // var validate_string = (" ") ? "empty string" : "not an empty string";
+        // console.log(validate_string);
+
+        // 7. Check if a character is a vowel or a consonant:
+        // let character = prompt("Enter an alphabet:");
+        // var validate_char = (character === "a" || character === "e" || character === "i" || character === "o" || character === "u") ? `${character} is a vowel` : `${character} is a consonant`;
+        // console.log(validate_char);
+
+        // 8. Check if a number is within a range
+        // var range = prompt("Enter the number:");
+        // var validate_range = (range >=1 && range <=50) ? `${range} is within range` : `${range} is out of range`;
+        // console.log(validate_range);
+
+        // 9. Check if a number is positive or zero 
+        // var number = prompt("Enter the number:");
+        // let validate_num = (number > 0) ? `${number} is positive number` : `${number} is Zero`;
+        // console.log(validate_num);
+
+        // 10. Check if a number is between 10 and 20 (inclusive)
+        // var data = prompt("Enter the number:");
+        // var validate_data = (data >= 10 && data <= 20) ? `${data} is b/w 10 to 20` : `${data} out of 10 to 20`;
+        // console.log(validate_data);
+
+
+        // Array tasks:
+        // 1. Reverse an array:
+        const sports = ["Cricket", "Football", "Basketball", "Boxing", "Skating", "Karate"];
+        for (i = sports.length; i >= 0; i--) {
+            console.log(sports[i], "Reverse array");
+        }
+
+
+        // 2. Find maximum element in an array:
+        var maxElem = [30, 50, 25, 65, 35];
+
+
+    </script>
+</body>
+
+</html>

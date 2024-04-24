@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Scope</title>
+</head>
+
+<body>
+    <script>
+        let msg1 = "Welcome to " //GLOBAL scope 
+        let msg2 = "Scope Concept"
+
+        function mymsg() {
+            let msg2 = "Javascript" //LOCAL or FUNCTIONAL scope
+            console.log(msg2, "local scope")
+            console.log(msg1, "global scope")
+            document.write(msg1 + msg2)
+        }
+        mymsg()
+        console.log(msg1, msg2, "message o/p")
+
+        // BLOCKED scope.....
+
+        let a = 100
+        var b = 200
+        const c = 300
+
+        function myconcept() {
+            let a = 200
+            var b = 400
+            const c = 600
+            console.log(a, b, c, "concept")
+        }
+        myconcept()
+        console.log(a, b, c, "msg")
+    </script>
+</body>
+
+</html>

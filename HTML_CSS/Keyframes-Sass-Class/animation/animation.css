@@ -1,0 +1,23 @@
+.box-div{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    animation: myAnimation 1s linear infinite alternate;
+}
+@keyframes myAnimation {
+    0%{
+        background-color: red;
+ 
+    }
+    20%{
+        background-color: gray;
+     
+
+        /* font-size: 60px; */
+    }
+    100%{
+        left: 80%;
+    }
+
+}

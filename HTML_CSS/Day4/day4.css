@@ -1,0 +1,48 @@
+.center_allign {
+  text-align: center;
+}
+.anchor-tag {
+  text-decoration: line-through;
+}
+.my-para {
+  margin: 20px;
+  border: 2px solid red;
+  padding: 30px;
+}
+.border_style {
+  margin: 15px;
+  border-width: 4px;
+  border-style: double;
+  border-color: brown;
+  padding: 15px;
+}
+.left_border {
+  border-style: none;
+  padding: 15px;
+  background-color: rgb(117, 186, 241);
+  border-left: 10px crimson dotted;
+}
+.right_border {
+  border-right: 10px red double;
+  padding: 10px;
+  background-color: cadetblue;
+}
+.top_border {
+  border-top: 10px orange;
+  border-style: ridge;
+  padding: 10px;
+  background-color: rgb(241, 191, 191);
+}
+.bottom_border {
+  border-bottom: 10px rgb(245, 146, 245);
+  border-style: dashed;
+  padding: 10px;
+  background-color: darkgrey;
+}
+.button-btn {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
