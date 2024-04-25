@@ -245,20 +245,28 @@
   color: white;
 }
 
+.carousel .slides {
+  width: 262px;
+  border-radius: 15px;
+  padding: 10px;
+}
 .carousel .slide-bttn {
   background-color: rgb(13, 155, 84);
   border: none;
   border-radius: 50px;
   padding: 13px;
 }
-.carousel .author-img {
-  border-radius: 50%;
-  border: none;
-  -o-object-fit: contain;
-     object-fit: contain;
+.carousel .author-img img {
+  border-radius: 500px;
 }
 .carousel .slide-subdiv {
   display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+.carousel .author-name {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 body {

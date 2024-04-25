@@ -1,53 +1,60 @@
 .reviews {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    background-image: url(https://preview.colorlib.com/theme/author/images/bg_4.jpg);
+  background-image: url(https://preview.colorlib.com/theme/author/images/bg_4.jpg);
+  width: 100%;
+  height: 552px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  // padding: 50px;
+  line-height: 1.5;
+  object-fit: scale-down;
+
+  .overlay-rev {
     width: 100%;
-    height: 552px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    // padding: 50px;
-    line-height: 1.5;
-    object-fit: scale-down;
+    height: 451px;
+    background-color: rgb(13, 155, 84, 0.7);
+    padding: 50px;
+  }
 
-    .overlay-rev {
-        width: 100%;
-        height: 451px;
-        background-color: rgb(13, 155, 84, 0.7);
-        padding: 50px;
-    }
+  .rev-title {
+    color: white;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+  }
 
-    .rev-title {
-        color: white;
-        font-weight: 900;
-        font-family: "Raleway", sans-serif;
-        font-size: 50px;
-    }
-
-    .rev-para {
-        font-size: 16px;
-        font-weight: 700;
-        color: white;
-    }
+  .rev-para {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+  }
 }
 
 .carousel {
-    .slide-bttn {
-        background-color: rgb(13, 155, 84);
-        border: none;
-        border-radius: 50px;
-        padding: 13px;
-    }
-
-    .author-img {
-        border-radius: 50%;
-        border: none;
-        object-fit: contain;
-    }
-
-    .slide-subdiv {
-        display: flex;
-    }
+  .slides {
+    width: 262px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .slide-bttn {
+    background-color: rgb(13, 155, 84);
+    border: none;
+    border-radius: 50px;
+    padding: 13px;
+  }
+  .author-img img {
+    border-radius: 500px;
+  }
+  .slide-subdiv {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+  }
+  .author-name {
+    font-weight: 500;
+    font-size: 20px;
+  }
 }
