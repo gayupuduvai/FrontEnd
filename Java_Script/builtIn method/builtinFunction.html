@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BuiltIn method (or) Function</title>
+        <script src="./builtIn.js"></script>
+    </head>
+
+    <body>
+        <script>
+            //  1. Math method/function
+            var a = 29.6;
+            console.log(Math.round(a), "round: adds the decimal value is five and above");
+            var b = 11.3;
+            console.log(Math.ceil(b), "ceil: adds after decimal value is even below five");
+            var c = 11.6;
+            console.log(Math.floor(c), "floor: ignores the values after decimal point");
+            console.log(Math.trunc(c), "trunc: its same as floor");
+            var d = -10;
+            console.log(Math.abs(d), "abs: returns/(changes the value) only the positive values");
+            console.log(Math.min(4, 8, 12, 16, 20), "min: returns only the minimum value");
+            console.log(Math.max(4, 8, 20, 16, 12), "max: returns only the maximum value");
+
+            // 2. Date method/function (.get and .set)
+            // .get
+            var today = new Date();
+            console.log(today, "returns the today datas with time");
+            console.log(today.getDate(), "get Date");
+            console.log(today.getDay(), "get Day: 0-Sunday, 1-Monday,......, 5-Friday,...");
+            console.log(today.getMilliseconds(), "getMilliseconds");
+            console.log(today.getFullYear(), "getFullYear");
+            console.log(today.getHours(), "getHours");
+            console.log(today.getMinutes(), "getMinutes");
+            console.log(today.getMonth(), "getMonth: Jan-0, Feb-1, March-2, Apr-3, ....., Dec-11");
+            console.log(today.getSeconds(), "getSeconds");
+            console.log(today.getTime(), "getTime");
+            console.log(today.getTimezoneOffset(), "getTimezoneOffset");
+            var date = Date.now();
+            console.log(date, "Milliseconds: Return the current date/time in milliseconds since January 1, 1970");
+            // .set 
+            var program = new Date('August 19, 1994 23:15:30');
+            program.setFullYear(2023);
+            console.log(program.getFullYear(), "setFullYear: Mannualy change the year in assigned datas");
+            program.setFullYear(0);
+            console.log(program.getFullYear(), "changing 2023 to 0");
+
+            // 3. Math.min with for loop
+            function minValue(array) {
+                if (array.length === 0) {
+                    return undefined;
+                }
+                let small = array[0];
+                for (let i = 1; i < array.length; i++) {
+                    small = Math.min(small, array[i]);
+                }
+                return small;
+            }
+            var minArray = [12, 18, 6, 24, 30];
+            console.log(minValue(minArray));
+
+        </script>
+    </body>
+
+</html>

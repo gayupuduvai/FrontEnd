@@ -52,6 +52,11 @@
     display: flex;
     gap: 15px;
     margin-top: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+  .author-details {
+    line-height: 10px;
   }
   .author-name {
     font-weight: 500;
