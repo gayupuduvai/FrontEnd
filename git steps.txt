@@ -1,0 +1,31 @@
+# New Repository:
+1. git init
+2. git add .
+3. git commit -m "first message"
+4. git branch -M main
+5. git remote add origin URL
+6. git push -u origin main
+
+# Existing Repository:
+1. git status
+2. git add .
+3. git status
+4. git commit -m "comments"
+5. git remote add origin URL
+6. git branch -M main
+7. git push -u origin main
+
+# Import code from another repository:
+1. git status
+2. git add .
+3. git status
+4. git commit -m "comments"
+5. git push
+
+# Export code from remote system:
+1. git pull
+
+
+#Export code to new system from remote system:
+1. git pull URL
+ 

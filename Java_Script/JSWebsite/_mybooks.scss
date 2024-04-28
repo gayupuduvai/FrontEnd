@@ -1,0 +1,74 @@
+.Books {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+.Books p {
+    color: #17b978;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    
+}
+.Books h2 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(27, 48, 92);
+}
+.books-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 18px;
+}
+.book-disc img {
+    height: 330px;
+    width: 100%;
+
+}
+.book-disc {
+    height: 330px;
+    width: 100%;
+}
+.Overlay {
+    position: relative;
+    top: -358px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: black;
+    cursor: pointer;
+    height: 330px;
+    // width: 100%;
+    .bookContent p {
+        position: relative;
+        bottom: -14rem;
+        left: 10rem;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: left;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Raleway", sans-serif;
+        line-height: 40px;
+    }
+    .bookContent span {
+        position: relative;
+        bottom: -11rem;
+        left: 2rem;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: left;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}
+.book-disc:hover .Overlay {
+    opacity: 0.8;
+    
+}
