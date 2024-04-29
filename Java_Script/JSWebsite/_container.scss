@@ -1,126 +1,127 @@
 .container1 {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 
-    .content-1 {
-        height: 500px;
-        width: 450px;
+  .content-1 {
+    height: 500px;
+    width: 450px;
 
-        margin: auto;
-    }
+    margin: auto;
+  }
 
-    .img-1 {
-        height: 500px;
-        width: 500px;
-    }
+  .img-1 {
+    height: 500px;
+    width: 500px;
+  }
 
-    .image1 {
-        width: 500px;
-        height: 500px;
-    }
+  .image1 {
+    width: 500px;
+    height: 500px;
+  }
 
-    .span-1 {
-        color: rgb(24, 134, 74);
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 2px;
-    }
+  .span-1 {
+    color: rgb(24, 134, 74);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 
-    .content-1-head {
-        font-weight: 800;
-        font-size: 50px;
-        color: rgb(53, 53, 94);
-    }
+  .content-1-head {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    color: rgb(53, 53, 94);
+  }
 
-    .button-1 {
-        color: white;
-        background-color: rgb(13, 155, 84);
-        border-radius: 30px;
-        padding: 17px 18px;
-        border: none;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
+  .button-1 {
+    color: white;
+    background-color: rgb(13, 155, 84);
+    border-radius: 30px;
+    padding: 17px 18px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
 
-    .para1 {
-        color: rgb(119, 115, 115);
-        line-height: 30px;
-        margin-bottom: 20px;
-        font-size: 19px;
-    }
+  .para1 {
+    color: rgb(119, 115, 115);
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-size: 19px;
+  }
 }
 
 .logos-div {
-    display: flex;
-    justify-content: center;
-    max-width: 1500px;
-    margin: auto;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: auto;
+  gap: 50px;
 
-    .logos {
-        height: 65px;
-        width: 160px;
-    }
+  .logos {
+    height: 65px;
+    width: 160px;
+  }
 }
 
 .container2 {
-    display: flex;
-    max-width: 1500px;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: auto;
-    margin-top: 65px;
+  display: flex;
+  max-width: 1500px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+  margin-top: 65px;
 
-    .about-img {
-        height: 650px;
-        width: 510px;
-    }
+  .about-img {
+    height: 650px;
+    width: 510px;
+  }
 
-    .About-text {
-        width: 480px;
-    }
+  .About-text {
+    width: 480px;
+  }
 
-    .About-head1 {
-        color: rgb(6, 42, 88);
-        font-size: 50px;
-    }
+  .About-head1 {
+    color: rgb(6, 42, 88);
+    font-size: 50px;
+  }
 
-    .About-head3 {
-        color: rgb(6, 42, 88);
-        font-size: 23px;
-    }
+  .About-head3 {
+    color: rgb(6, 42, 88);
+    font-size: 23px;
+  }
 
-    .About-para {
-        color: rgb(150, 152, 168);
-        line-height: 27px;
-        font-size: 16px;
-    }
+  .About-para {
+    color: rgb(150, 152, 168);
+    line-height: 27px;
+    font-size: 16px;
+  }
 }
 
 .container3 {
-    margin: auto;
-    max-width: 1500px;
-    display: flex;
-    column-gap: 30px;
-    justify-content: center;
-    margin-top: 65px;
+  margin: auto;
+  max-width: 1500px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  margin-top: 65px;
 
-    .box {
-        text-align: center;
-        height: 150px;
-        width: 270px;
-        background-color: aliceblue;
-        line-height: 10px;
-    }
+  .box {
+    text-align: center;
+    height: 150px;
+    width: 270px;
+    background-color: aliceblue;
+    line-height: 10px;
+  }
 
-    .box-count {
-        color: rgb(6, 42, 88);
-        font-size: 35px;
-        font-weight: 600;
-    }
+  .box-count {
+    color: rgb(6, 42, 88);
+    font-size: 35px;
+    font-weight: 600;
+  }
 
-    .box-text {
-        color: rgb(170, 175, 179);
-    }
+  .box-text {
+    color: rgb(170, 175, 179);
+  }
 }

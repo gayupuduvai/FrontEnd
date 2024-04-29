@@ -57,8 +57,9 @@
   letter-spacing: 2px;
 }
 .container1 .content-1-head {
-  font-weight: 800;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
   color: rgb(53, 53, 94);
 }
 .container1 .button-1 {
@@ -522,7 +523,10 @@
   top: 20px;
 }
 
-.Address, .Contact-Num, .email, .website {
+.Address,
+.Contact-Num,
+.email,
+.website {
   width: 270px;
   height: 283px;
   background-color: rgb(234, 236, 236);
@@ -553,12 +557,13 @@
 }
 
 .loction {
+  display: flex;
   width: 100%;
   max-width: 1100px;
   justify-content: center;
   align-items: center;
-  display: flex;
-  margin-top: 70px;
+  margin: auto;
+  margin-top: 65px;
 }
 
 .error {
@@ -595,8 +600,48 @@
   width: 400px;
   background-color: rgb(236, 238, 240);
   padding: 50px;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cust-details input {
+  padding: 16px;
+  color: black;
+}
+
+.cust-details input::-moz-placeholder {
+  color: rgb(180, 178, 178);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cust-details input::placeholder {
+  color: rgb(180, 178, 178);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cust-details textarea::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  color: rgb(180, 178, 178);
+  font-size: 16px;
+}
+
+.cust-details textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  color: rgb(180, 178, 178);
+  font-size: 16px;
+}
+
+.cust-details button {
+  background-color: #17b978;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
 }
 
 body {

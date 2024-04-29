@@ -1,101 +1,128 @@
 .contact h2 {
-    color: midnightblue;
-    font-size: 50px;
-    font-weight: 900px; 
-    text-align: center;
-    font-family: "Raleway", sans-serif;
+  color: midnightblue;
+  font-size: 50px;
+  font-weight: 900px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 .contact-para {
-    color:lightslategray;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+  color: lightslategray;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
 }
 .contact-details {
-    display: flex;
-    width: 100%;
-    max-width: 1100px;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 65px;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 65px;
 }
 .cont-bttn {
-    border-radius: 100%;
-    border: none;
-    padding: 33px;
-    background-color: #17b978;
-    position: relative;
-    left: 73px;
-    top: 20px;
+  border-radius: 100%;
+  border: none;
+  padding: 33px;
+  background-color: #17b978;
+  position: relative;
+  left: 73px;
+  top: 20px;
 }
-.Address, .Contact-Num, .email, .website {
-    width: 270px;
-    height: 283px;
-    background-color: rgb(234, 236, 236);
-    border-radius: 3px;
-    
+.Address,
+.Contact-Num,
+.email,
+.website {
+  width: 270px;
+  height: 283px;
+  background-color: rgb(234, 236, 236);
+  border-radius: 3px;
 }
 .cont-lbl {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    margin-top: 33px;
-    color: #263b5e;
-    font-size: 18px;
-    font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 33px;
+  color: #263b5e;
+  font-size: 18px;
+  font-weight: 600;
 }
 .cont-p {
-    color: rgb(130, 130, 136);
-    text-align: center;
-    line-height: 30px;
-    margin-top: 35px;
+  color: rgb(130, 130, 136);
+  text-align: center;
+  line-height: 30px;
+  margin-top: 35px;
 }
 .cont-pg {
-    color: #17b978;
-    text-align: center;
-    margin-top: 35px;
-    cursor: pointer;
+  color: #17b978;
+  text-align: center;
+  margin-top: 35px;
+  cursor: pointer;
 }
 .loction {
-    width: 100%;
-    max-width: 1100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 70px;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 65px;
 }
 .error {
-    background-color: rgb(203, 206, 206);
-    padding: 50px;
-    height: 500px;
-    width: 400px;
-    text-align: center;
+  background-color: rgb(203, 206, 206);
+  padding: 50px;
+  height: 500px;
+  width: 400px;
+  text-align: center;
 }
 .error img {
-    position: relative;
-    top: 150px;
+  position: relative;
+  top: 150px;
 }
 .error-para1 {
-    position: relative;
-    top: 133px;
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 24px;
-    color: black;
+  position: relative;
+  top: 133px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 24px;
+  color: black;
 }
 .error-para2 {
-    position: relative;
-    top: 145px;
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 12px;
-    color: black;
+  position: relative;
+  top: 145px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  color: black;
 }
 .cust-details {
-    height: 500px;
-    width: 400px;
-    background-color: rgb(236, 238, 240);
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
+  height: 500px;
+  width: 400px;
+  background-color: rgb(236, 238, 240);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  // gap: 10px;
+}
+.cust-details input {
+  padding: 16px;
+  color: black;
+}
+.cust-details input::placeholder {
+  color: rgb(180, 178, 178);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.cust-details textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  color: rgb(180, 178, 178);
+  font-size: 16px;
+}
+.cust-details button {
+  background-color: #17b978;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
 }
