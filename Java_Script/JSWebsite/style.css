@@ -36,19 +36,22 @@
 .container1 {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
+  gap: 45px;
 }
 .container1 .content-1 {
   height: 500px;
   width: 450px;
-  margin: auto;
 }
 .container1 .img-1 {
   height: 500px;
   width: 500px;
 }
 .container1 .image1 {
-  width: 500px;
+  width: 655px;
   height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container1 .span-1 {
   color: rgb(24, 134, 74);
@@ -81,9 +84,8 @@
 .logos-div {
   display: flex;
   justify-content: center;
-  max-width: 1500px;
-  margin: auto;
   gap: 50px;
+  margin-top: 70px;
 }
 .logos-div .logos {
   height: 65px;
@@ -602,6 +604,7 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .cust-details input {
@@ -636,12 +639,14 @@
 }
 
 .cust-details button {
-  background-color: #17b978;
   color: white;
-  padding: 10px 15px;
-  border-radius: 10px;
+  background-color: rgb(13, 155, 84);
+  border-radius: 30px;
+  padding: 17px 18px;
   border: none;
+  width: 200px;
   margin-top: 30px;
+  letter-spacing: 2px;
 }
 
 body {

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .error-message {
+                color: red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <label>Name: </label>
+        <input type="text" placeholder="Enter name" id="userName" /><br />
+        <p class="error-message" id="name-error-message"></p>
+        <br />
+        <label>Number: </label>
+        <input type="text" placeholder="Enter number" id="mobileNumber" /><br />
+        <p class="error-message" id="number-error-message"></p>
+        <br />
+        <label>Password: </label>
+        <input type="password" placeholder="Enter password" id="password" /><br />
+        <p class="error-message" id="Password-error-message"></p>
+        <br />
+        <button type="button" onclick="submit()">Submit</button>
+    </body>
+    <script>
+        function submit() {
+            console.log("working");
+            let userNameData = document.getElementById("userName").value;
+            let mobileNumberData = document.getElementById("mobileNumber").value;
+            let passwordData = document.getElementById("password").value;
+
+            let msgName = document.getElementById("name-error-message");
+            let msgnum = document.getElementById("number-error-message");
+            let msgPass = document.getElementById("Password-error-message");
+
+            if (userNameData == "") {
+                msgName.textContent = "Enter valid Name";
+            } else {
+                let pattern = [A - Za - z];
+                let res = pattern.test(userNameData);
+                console.log(res, "res");
+            }
+        }
+    </script>
+
+</html>

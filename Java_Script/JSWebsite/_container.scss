@@ -1,12 +1,12 @@
 .container1 {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
+  gap: 45px;
 
   .content-1 {
     height: 500px;
     width: 450px;
-
-    margin: auto;
   }
 
   .img-1 {
@@ -15,8 +15,9 @@
   }
 
   .image1 {
-    width: 500px;
+    width: 655px;
     height: 500px;
+    object-fit: cover;
   }
 
   .span-1 {
@@ -54,9 +55,10 @@
 .logos-div {
   display: flex;
   justify-content: center;
-  max-width: 1500px;
-  margin: auto;
+  // max-width: 1500px;
+  // margin: auto;
   gap: 50px;
+  margin-top: 70px;
 
   .logos {
     height: 65px;

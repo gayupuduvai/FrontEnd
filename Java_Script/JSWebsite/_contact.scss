@@ -101,7 +101,7 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  // gap: 10px;
+  gap: 10px;
 }
 .cust-details input {
   padding: 16px;
@@ -119,10 +119,12 @@
   font-size: 16px;
 }
 .cust-details button {
-  background-color: #17b978;
   color: white;
-  padding: 10px 15px;
-  border-radius: 10px;
+  background-color: rgb(13, 155, 84);
+  border-radius: 30px;
+  padding: 17px 18px;
   border: none;
+  width: 200px;
   margin-top: 30px;
+  letter-spacing: 2px;
 }
