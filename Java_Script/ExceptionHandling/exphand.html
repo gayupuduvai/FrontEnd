@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exception Handling</title>
+    </head>
+
+    <body>
+        <script>
+            // 1. First exanple
+            var a = 3;
+            function exphand() {
+                try {
+                    if (a % 2 == 0) {
+                        console.log("It is an EVEN number")
+                    }
+                    // else {
+                    //     console.log("It is an ODD number")
+                    // }
+                    throw ("It is an odd number")
+                } catch (error) {
+                    console.log(error);
+                }
+            } exphand()
+
+            // 2. Second example
+
+            // function trial(i) {
+            //     try {
+            //         if (i === "") {
+            //             throw ("empty");
+            //         }
+            //         else if (i < 0) {
+            //             throw ("lesser value");
+            //         }
+            //         else if (i > 50) {
+            //             throw ("Greater value");
+            //         }
+            //         else {
+            //             throw ("error")
+            //         }
+            //     }
+            //     catch (err) {
+            //         console.log(err);
+            //     }
+            // }
+            // trial(60);
+            function myfunction(i) {
+                try {
+                    if (i === "")
+                        throw ("empty");
+                    if (i < 0)
+                        throw ("lesser value");
+                    if (i > 50)
+                        throw ("greator value")
+                }
+                catch (errors) {
+                    console.log(errors)
+                }
+            } myfunction(60)
+        </script>
+    </body>
+
+</html>
