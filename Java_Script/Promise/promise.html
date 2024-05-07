@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promise</title>
+        <script src="./promise.js"></script>
+    </head>
+
+    <body>
+        <script>
+            // In class
+            // 1. Example one
+            let count = false;
+            var promiseDemo = new Promise(function (res, rej) {
+                if (count) {
+                    res("Resolve is Working");
+                } else {
+                    rej("Reject is Working");
+                }
+            });
+            console.log(promiseDemo, "PromiseDemo");
+
+
+            // 2. Example two - PROMISE is an Microtask
+            let values = true;
+            var promiseValue = new Promise(function (resolve, reject) {
+                if (values) {
+                    resolve("RESOLVE is working");
+                } else {
+                    reject("REJECT is working");
+                }
+            });
+            promiseValue.then((resolveOP) => {
+                console.log(resolveOP);
+            });
+            promiseValue.catch((rejectOP) => {
+                console.log(rejectOP);
+            });
+            console.log(promiseValue, "promiseValue");
+
+            // 3. setTimeout and setInterval
+            setTimeout(() => {
+                let a = 5, b = 5;
+                let c = a * b;
+                console.log(c, "setTimeout");
+            }, 6000);
+
+            setInterval(() => {
+                let m = 10, n = 10;
+                let i = m + n;
+                console.log(i, "setInterval");
+            }, 2000);
+
+        </script>
+    </body>
+
+</html>
