@@ -1,219 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration Form</title>
-        <style>
-            body {
-                font-family: 'Times New Roman', Times, serif;
-                background-image: linear-gradient(60deg, purple, rgb(226, 157, 226), green);
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100vh;
-                text-align: center;
-                font-size: 19px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: linear-gradient(60deg, purple, rgb(226, 157, 226), green);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            font-size: 19px;
 
-                ::placeholder {
-                    font-size: 12px;
-                }
-
-                label {
-                    margin-left: 10px;
-                }
-
-                input {
-                    padding: 4px 15px;
-                    margin-right: 20px;
-                }
-
-                button {
-                    border: none;
-                    border-radius: 5px;
-                    padding: 10px 40px;
-                    background-color: darkblue;
-                    color: white;
-                    letter-spacing: 6px;
-                    box-shadow: 0 4px 8px 0;
-                    cursor: pointer;
-                }
+            ::placeholder {
+                font-size: 12px;
             }
 
-            .form {
-                row-gap: 10px;
+            input {
+                padding: 4px 15px;
+                /* margin-right: 20px; */
             }
 
-            .error {
-                color: red;
-            }
-
-        </style>
-    </head>
-
-    <body>
-        <h1>STUDENT REGISTRATION FORM</h1>
-        <form id="myForm">
-            <label for="name">Name: </label>
-            <input type="text" id="name" placeholder="Enter your full name"><br />
-            <span id="nameError" class="error"></span><br />
-
-            <label>Date of Birth:</label>
-            <input type="date" id="DOB"><br />
-            <span id="dobError" class="error"></span><br />
-
-            <label>Email ID: </label>
-            <input type="email" id="mail" placeholder="Enter your email"><br />
-            <span id="emailError" class="error"></span><br />
-
-            <label>Mobile Number: </label>
-            <input type="number" id="mobile-number"><br />
-            <span id="mobileError" class="error"></span><br />
-
-            <label>Gender: </label><input type="radio">Male
-            <input type="radio">Female<br />
-            <span id="genderError" class="error"></span><br />
-
-            <label>Address: </label><input type="text" id="address" placeholder="Enter your address"><br />
-            <span id="addressError" class="error"></span><br />
-
-            <label>City: </label><input type="text" id="city"><br />
-            <span id="cityError" class="error"></span><br />
-
-            <label>State: </label><input type="text" id="state"><br />
-            <span id="stateError" class="error"></span><br />
-
-            <label>Country: </label><input type="text" id="country"><br />
-            <span id="countryError" class="error"></span><br />
-
-            <label>Pincode: </label><input type="number" id="pincode"><br />
-            <span id="pincodeError" class="error"></span><br />
-
-            <button type="button" onclick="myfunction()">SUBMIT</button>
-        </form>
-    </body>
-    <script>
-        function myfunction() {
-            let username = document.getElementById("name").value;
-            let dob = document.getElementById("DOB").value;
-            let email = document.getElementById("mail").value;
-            let phone = document.getElementById("mobile-number").value;
-            let addressData = document.getElementById("address").value;
-            let cityData = document.getElementById("city").value;
-            let stateData = document.getElementById("state").value;
-            let countryData = document.getElementById("country").value;
-            let picodeData = document.getElementById("pincode").value;
-
-            let NameError = document.getElementById("nameError");
-            let DobError = document.getElementById("dobError");
-            let EmailError = document.getElementById("emailError");
-            let MobileError = document.getElementById("mobileError");
-            // let genderError = document.getElementById("genderError");
-            let AddressError = document.getElementById("addressError");
-            let CityError = document.getElementById("cityError");
-            let StateError = document.getElementById("stateError");
-            let CountryError = document.getElementById("countryError");
-            let PincodeError = document.getElementById("pincodeError");
-
-            let namePattern = /^[a-zA-Z\-']+$/;
-            if (username === "") {
-                NameError.textContent = "Name is required";
-            } else if (!namePattern.test(username)) {
-                NameError.textContent = "Invalid name";
-            }
-            else {
-                NameError.textContent = "";
-                console.log(username, "Valid name");
-            }
-
-            // date condition
-            // let datePattern = /^\d{4}-\d{2}-\d{2}$/;
-            if (dob === "") {
-                DobError.textContent = "Date is required";
-            }
-            else {
-                DobError.textContent = "";
-                console.log(dob, "valid date");
-            }
-
-            // email condition
-            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (email === "") {
-                EmailError.textContent = "Email is required";
-            } else if (!emailPattern.test(email)) {
-                EmailError.textContent = "Invalid Email";
-
-            } else {
-                EmailError.textContent = "";
-                console.log(email, "valid email");
-            }
-
-            // mobile condition
-            let mobilePattern = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
-            if (phone === "") {
-                MobileError.textContent = "Mobile number is required";
-            } else if (!mobilePattern.test(phone)) {
-                MobileError.textContent = "Invalid number";
-            } else {
-                MobileError.textContent = "";
-                console.log(phone, "Valid number");
-            }
-
-            // address condition
-            let addressPattern = /^[a-zA-Z0-9\s,'-]*$/;
-            if (addressData === "") {
-                AddressError.textContent = "Address is required";
-            } else if (!addressPattern.test(addressData)) {
-                AddressError.textContent = "Invalid address";
-            } else {
-                AddressError.textContent = "";
-                console.log(addressData, "Valid address");
-            }
-
-            // City Condition
-            let cityPattern = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/;
-            if (cityData === "") {
-                CityError.textContent = "City is Required";
-            } else if (!cityPattern.test(cityData)) {
-                CityError.textContent = "Invalid City";
-            } else {
-                CityError.textContent = "";
-                console.log(cityData, "Valid City");
-            }
-
-            // State Condition
-            let statePattern = /^[a-zA-Z\s'-]+$/;
-            if (stateData === "") {
-                StateError.textContent = "State is required";
-            } else if (!statePattern.test(stateData)) {
-                StateError.textContent = "Invalid State";
-            } else {
-                StateError.textContent = "";
-                console.log(stateData, "Valid State");
-            }
-
-            // Country condition
-            let countryPattern = /^[a-zA-Z\s']+$/;
-            if (countryData === "") {
-                CountryError.textContent = "Country is  Required";
-            } else if (!countryPattern.test(countryData)) {
-                CountryError.textContent = "Invalid Country";
-            } else {
-                CountryError.textContent = "";
-                console.log(countryData, "Valid Country");
-            }
-
-            // Pincode condition
-            let pincodePattern = /^\d{6}$/;
-            if (picodeData === "") {
-                PincodeError.textContent = "Pincode is required";
-            } else if (!pincodePattern.test(picodeData)) {
-                PincodeError.textContent = "Invalid Pincode";
-            } else {
-                PincodeError.textContent = "";
-                console.log(picodeData, "Valid Pincode");
+            button {
+                border: none;
+                border-radius: 5px;
+                padding: 10px 40px;
+                background-color: darkblue;
+                color: white;
+                letter-spacing: 6px;
+                box-shadow: 0 4px 8px 0;
+                cursor: pointer;
             }
         }
-    </script>
+
+        /* #myForm {
+                margin: auto;
+            } */
+        .form {
+            row-gap: 10px;
+        }
+
+        .error {
+            color: red;
+            position: relative;
+            left: 140px;
+        }
+
+        .FormData {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 90px;
+            position: relative;
+            left: 445px;
+        }
+
+        .FormData label {
+            text-align: left;
+            width: 180px;
+            /* position: relative;
+                left: 1px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <form id="myForm">
+        <div class="FormData"><label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your full name"><br />
+        </div>
+        <span id="nameError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Date of Birth:</label>
+            <input type="date" id="DOB"><br />
+        </div>
+        <span id="dobError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Email ID: </label>
+            <input type="email" id="mail" placeholder="Enter your email"><br />
+        </div>
+        <span id="emailError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Mobile Number: </label>
+            <input type="text" id="mobile-number"><br />
+        </div>
+        <span id="mobileError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Gender: </label>
+            <div class="radio">
+                <input type="radio" name="gender" value="Male" id="rad1">
+                <label for="rad1">Male</label>
+                <input type="radio" name="gender" value="Female" id="rad2">
+                <label for="rad2">Female</label><br />
+            </div>
+        </div>
+        <span id="genderError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Address: </label>
+            <input type="text" id="address" placeholder="Enter your address"><br />
+        </div>
+        <span id="addressError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>City: </label>
+            <input type="text" id="city"><br />
+        </div>
+        <span id="cityError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>State: </label><input type="text" id="state"><br />
+        </div>
+        <span id="stateError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Country: </label><input type="text" id="country"><br />
+        </div>
+        <span id="countryError" class="error"></span><br />
+
+        <div class="FormData">
+            <label>Pincode: </label><input type="text" id="pincode"><br />
+        </div>
+        <span id="pincodeError" class="error"></span><br />
+
+        <button type="button" onclick="myfunction()">SUBMIT</button>
+    </form>
+</body>
+<script>
+    function myfunction() {
+        let username = document.getElementById("name").value;
+        let dob = document.getElementById("DOB").value;
+        let email = document.getElementById("mail").value;
+        let phone = document.getElementById("mobile-number").value;
+        let addressData = document.getElementById("address").value;
+        let cityData = document.getElementById("city").value;
+        let stateData = document.getElementById("state").value;
+        let countryData = document.getElementById("country").value;
+        let picodeData = document.getElementById("pincode").value;
+
+        let NameError = document.getElementById("nameError");
+        let DobError = document.getElementById("dobError");
+        let EmailError = document.getElementById("emailError");
+        let MobileError = document.getElementById("mobileError");
+        // let genderError = document.getElementById("genderError");
+        let AddressError = document.getElementById("addressError");
+        let CityError = document.getElementById("cityError");
+        let StateError = document.getElementById("stateError");
+        let CountryError = document.getElementById("countryError");
+        let PincodeError = document.getElementById("pincodeError");
+
+        let namePattern = /^[a-zA-Z\-']+$/;
+        if (username === "") {
+            NameError.textContent = "Name is required";
+        } else if (!namePattern.test(username)) {
+            NameError.textContent = "Invalid name";
+        }
+        else {
+            NameError.textContent = "";
+            console.log(username, "Valid name");
+        }
+
+        // date condition
+        // let datePattern = /^\d{4}-\d{2}-\d{2}$/;
+        if (dob === "") {
+            DobError.textContent = "Date is required";
+        }
+        else {
+            DobError.textContent = "";
+            console.log(dob, "valid date");
+        }
+
+        // email condition
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+            EmailError.textContent = "Email is required";
+        } else if (!emailPattern.test(email)) {
+            EmailError.textContent = "Invalid Email";
+
+        } else {
+            EmailError.textContent = "";
+            console.log(email, "valid email");
+        }
+
+        // mobile condition
+        let mobilePattern = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
+        if (phone === "") {
+            MobileError.textContent = "Mobile number is required";
+        } else if (!mobilePattern.test(phone)) {
+            MobileError.textContent = "Invalid number";
+        } else {
+            MobileError.textContent = "";
+            console.log(phone, "Valid number");
+        }
+
+        // address condition
+        let addressPattern = /^[a-zA-Z0-9\s,'-]*$/;
+        if (addressData === "") {
+            AddressError.textContent = "Address is required";
+        } else if (!addressPattern.test(addressData)) {
+            AddressError.textContent = "Invalid address";
+        } else {
+            AddressError.textContent = "";
+            console.log(addressData, "Valid address");
+        }
+
+        // City Condition
+        let cityPattern = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$/;
+        if (cityData === "") {
+            CityError.textContent = "City is Required";
+        } else if (!cityPattern.test(cityData)) {
+            CityError.textContent = "Invalid City";
+        } else {
+            CityError.textContent = "";
+            console.log(cityData, "Valid City");
+        }
+
+        // State Condition
+        let statePattern = /^[a-zA-Z\s'-]+$/;
+        if (stateData === "") {
+            StateError.textContent = "State is required";
+        } else if (!statePattern.test(stateData)) {
+            StateError.textContent = "Invalid State";
+        } else {
+            StateError.textContent = "";
+            console.log(stateData, "Valid State");
+        }
+
+        // Country condition
+        let countryPattern = /^[a-zA-Z\s']+$/;
+        if (countryData === "") {
+            CountryError.textContent = "Country is  Required";
+        } else if (!countryPattern.test(countryData)) {
+            CountryError.textContent = "Invalid Country";
+        } else {
+            CountryError.textContent = "";
+            console.log(countryData, "Valid Country");
+        }
+
+        // Pincode condition
+        let pincodePattern = /^\d{6}$/;
+        if (picodeData === "") {
+            PincodeError.textContent = "Pincode is required";
+        } else if (!pincodePattern.test(picodeData)) {
+            PincodeError.textContent = "Invalid Pincode";
+        } else {
+            PincodeError.textContent = "";
+            console.log(picodeData, "Valid Pincode");
+        }
+    }
+</script>
 
 </html>
