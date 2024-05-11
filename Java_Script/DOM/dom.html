@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>async/await and HTML DOM</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <h2>DOM Elements</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, a!</p>
+        </div>
+
+        <p id="demo" style="color: red;"></p>
+        <script>
+            // async Function and await
+            async function myfunction() {
+                let note = new Promise(function (resolve, reject) {
+                    resolve("Hello World!!!!");
+                });
+                console.log(await note, "||async/await function is working||");
+            }
+            myfunction()
+
+            // DOM Elements
+            const a = document.getElementById("main");
+            const b = a.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = 'The second line inside "main" is: ' + b[0].innerHTML;
+
+        </script>
+    </body>
+
+</html>
