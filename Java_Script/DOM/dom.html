@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>async/await and HTML DOM</title>
+        <script src="./dom.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <h2>DOM Elements</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, a!</p>
+        </div>
+
+        <p id="demo" style="color: red;"></p>
+
+        <!-- DOM Forms -->
+        Name: <input type="text" placeholder="Enter your Name" id="name"><br><br>
+        <p id="namedemo" style="color: red;"></p>
+        Number: <input id="number">
+        <p id="numdemo" style="color: red;"></p><br><br>
+
+        <button type="button" onclick="myForms()">Submit</button>
+
+        <!-- DOM CSS -->
+        <h1 id="id1" style="font-size: 40px;">DOM Css</h1>
+        <p id="cssDom1">Using CSS in DOM</p>
+        <p id="cssDom2">Using CSS in DOM</p>
+        <button type="button" onclick="document.getElementById('id1').style.color = 'red'">Click Me!</button>
+        <script>
+            // async Function and await
+            async function myfunction() {
+                let note = new Promise(function (resolve, reject) {
+                    resolve("Hello World!!!!");
+                });
+                console.log(await note, "||async/await function is working||");
+            }
+            myfunction()
+
+            // DOM Elements
+            const a = document.getElementById("main");
+            const b = a.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = 'The second line inside "main" is: ' + b[0].innerHTML;
+
+            // DOM CSS
+            document.getElementById("cssDom1").style.fontSize = "25px";
+            document.getElementById("cssDom1").style.fontStyle = "italic";
+            document.getElementById("cssDom2").style.fontSize = "30px";
+            document.getElementById("cssDom2").style.color = "blue";
+
+        </script>
+    </body>
+
+</html>
