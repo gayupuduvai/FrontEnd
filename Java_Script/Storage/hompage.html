@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
-           body img{
-            width: 60%;
-            object-fit: fill;
+      body{
+         
+         background-image: repeating-conic-gradient(rgb(215, 238, 16), rgb(194, 231, 72), rgb(130, 235, 37));
+         margin: 0;
+         margin-top: 50px;
+         padding: 0;
+         width: 100%;
+         height: 100vh;
+      }
+      .logout{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 15px;
+         
+      }
+            img{
+            width: 50%;
+            
+            
+           }
+          .logout button {
+            width: 60px;
+            padding: 10px;
             
            }
            </style>
 </head>
 <body>
-   <img src="../images/images.jfif" alt="">
+   <div class="logout">
+      <img src="../images/Pic3.jpg" alt="">
+      <button type="button" onclick="logoutFunction()">Logout</button>
+   </div>
+   <script>
+ function logoutFunction() {
+   
+   window.location.assign("http://127.0.0.1:5500/Java_Script/Storage/storage.html")
+   
+ }
+   </script>
 </body>
 </html>

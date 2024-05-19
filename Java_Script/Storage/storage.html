@@ -5,48 +5,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login Page</title>
+        <script src="./storage.js" defer></script>
     </head>
 
     <body>
-        <form class="loginPage">
-            <label>Username:</label>
-            <input type="text" id="username">
+        <form id="loginPage">
+            <label for="username">Username:</label>
+            <input type="text" id="username" autocomplete="off">
             <p id="nameError" style="color: red;"></p>
-            <label>Password:</label>
-            <input type="password" id="pswd">
+            <label for="pswd">Password:</label>
+            <input type="password" id="pswd" autocomplete="off">
             <p id="pswdError" style="color: red;"></p>
-            <button type="button" onclick="localstorage()">Login</button>
+            <button type="submit">Login</button>
         </form>
-
-        <script>
-            // function myfunction() {
-            //     let Username = document.getElementById("username").value;
-            //     let NameError = document.getElementById("nameError");
-            //     let namePattern = /^[a-zA-Z\-']+$/;
-            //     if (Username === "") {
-            //         NameError.textContent = "Name is required";
-            //     } else if (!namePattern.test(Username)) {
-            //         NameError.textContent = "Invalid name";
-            //     }
-            //     else {
-            //         NameError.textContent = "";
-            //         console.log(Username, "Valid name");
-            //     }
-
-            //     let Password = document.getElementById("pswd").value;
-            //     let PswdError = document.getElementById("pswdError");
-            //     let PswdPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[a-zA-Z\d!@#$%^&*()_+]{8,}$/;
-            //     if (Password === "") {
-            //         PswdError.textContent = "Password Required";
-            //     } else if (!PswdPattern.test(Password)) {
-            //         PswdError.textContent = "Invalid Password";
-            //     }
-            //     else {
-            //         PswdError.textContent = "";
-            //     }
-            // }
-        </script>
-
     </body>
 
 </html>
