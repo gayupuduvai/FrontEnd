@@ -47,13 +47,25 @@
     display: none;
   }
   .navigation {
+    justify-content: space-around;
     background: black;
     color: white;
   }
-  .menuBar {
+  .navigation .menuBar {
     display: block;
     float: right;
-    color: white;
+  }
+  .navigation .menuBar button {
+    border: none;
+    padding: 15px;
+    letter-spacing: 3px;
+    background-color: black;
+    color: darkgrey;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .navigation .logo {
+    margin-left: -60px;
   }
 }
 .container1 {
@@ -78,7 +90,7 @@
   overflow-y: visible;
 }
 .container1 .span-1 {
-  color: rgb(24, 134, 74);
+  color: #17b978;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 2px;
@@ -87,11 +99,11 @@
   font-size: 60px;
   font-weight: 900;
   font-family: "Raleway", sans-serif;
-  color: rgb(53, 53, 94);
+  color: #263b5e;
 }
 .container1 .button-1 {
   color: white;
-  background-color: rgb(13, 155, 84);
+  background-color: #17b978;
   border-radius: 30px;
   padding: 17px 18px;
   border: none;
@@ -171,6 +183,38 @@
   color: rgb(170, 175, 179);
 }
 
+@media (max-width: 950px) {
+  .container1 {
+    position: relative;
+    height: 702px;
+    width: 100%;
+  }
+  .container1 .content-1 {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 45px;
+    top: 202px;
+  }
+  .container1 .content-1-head {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+  .container1 .img-1 {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    width: 100%;
+    height: 702px;
+  }
+  .container1 .image1 {
+    height: 685px;
+    width: 100%;
+  }
+}
 .Chapter .context-head {
   text-align: center;
   color: rgb(6, 42, 88);
