@@ -26,6 +26,7 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
   }
 
   .content-1-head {
@@ -43,6 +44,8 @@
     border: none;
     text-transform: uppercase;
     font-size: 13px;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
   }
 
   .para1 {
@@ -108,6 +111,7 @@
   display: flex;
   column-gap: 30px;
   justify-content: center;
+  
   margin-top: 65px;
 
   .box {
@@ -142,11 +146,11 @@
       text-align: center;
       align-content: center;
       padding: 45px;
-      top: 202px;
+      top: 111px;
       
     }
     .content-1-head {
-      font-size: 60px;
+      font-size: 58px;
       font-weight: 900;
       line-height: 1.3;
     }
@@ -160,6 +164,29 @@
     .image1{
       height: 685px;
       width: 100%;
+    }
+    .button-1:hover{
+      color: black;
+    }
+    .para1{
+      color: black;
+    }
+  }
+  .logos-div{
+    flex-direction: column;
+    align-items: center;
+    .logos{
+      width: 270px;
+      height: 100px;
+    }
+  }
+  .container2{
+    max-width: 800px;
+    margin-left: 44px;
+    .about-img{
+      height: 651px;
+      width: 231px;
+      object-fit: cover;
     }
   }
 }
