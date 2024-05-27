@@ -232,14 +232,15 @@
     height: 100px;
   }
   .container2 {
-    max-width: 800px;
-    margin-left: 44px;
+    max-width: 693px;
+    margin-left: 155px;
   }
   .container2 .about-img {
-    height: 651px;
-    width: 231px;
+    height: 886px;
+    width: 337px;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-top: 40px;
   }
 }
 .Chapter .context-head {
