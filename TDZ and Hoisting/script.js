@@ -32,17 +32,6 @@
 
 // 3. Scopes
 let a = [2, 4, 5];
-// let arr = [3, 5, 7];
-// function double(arr) {
-//     let O = [];
-//     for (x of arr) {
-//         O.push(x ** 2);
-//     }
-//     return O;
-// }
-// let data = double();
-// console.log(data);
-
 function map(func, a) {
     let O = [];
     for (let i = 0; i < a.length; i++) {
@@ -54,3 +43,16 @@ let result1 = map((v) => v ** 2, a);
 let result2 = map((v) => v ** 3, a);
 console.log(result1);
 console.log(result2);
+
+let b = [10, 20, 30];
+
+function double() {
+    let m = [];
+    for (let j of b) {
+        m.push(j ** 2);
+
+    }
+    console.log(m);
+    return m;
+}
+double();
