@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closures/Lexical scope/Recursion</title>
+  </head>
+  <body>
+    <script>
+      // 1. Call Stack
+      let name = "Abi";
+      function greeting(name) {
+        console.log("Hello" + " " + name);
+      }
+      greeting(name);
+
+      //   2. Lexical Scope
+      let a = 10;
+      function outer() {
+        // let a = 30;
+        function inner() {
+          console.log(a);
+        }
+        return inner;
+      }
+      const func = outer();
+      func();
+
+      //   3. Closure example
+
+      function myfunc(a) {
+        return (b) => b * a;
+      }
+      const double = myfunc(2);
+      console.log(double(5), "Closure-double");
+      console.log(double(4), "Closure-double");
+      console.log(double(2), "Closure-double");
+
+      const triple = myfunc(3);
+      console.log(triple(3), "Closure-tripple");
+      console.log(triple(4), "Closure-tripple");
+    </script>
+  </body>
+</html>
