@@ -48,3 +48,14 @@ if (number >= 0) {
 else {
     console.log("Enter a Positive Number.");
 }
+
+// 5.
+
+const obj = {
+    name: "Ajay",
+    age: 20,
+    getName() {
+        console.log(this);
+    },
+};
+obj.getName();

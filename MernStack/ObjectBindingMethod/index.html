@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this, call, apply, Bind</title>
+  </head>
+  <body>
+    <h1>Object Binding Methods</h1>
+    <p>
+      <b>1. call():</b> It is an Object binding, which is called onspot. And
+      comma is used as seperator in it's Arguments.
+    </p>
+    <br />
+    <p>
+      <b>2. apply():</b> It can be called out for future or lateron process.
+      Arguments are given like an array.
+    </p>
+    <br />
+    <p>
+      <b>3. bind():</b> It will bind an object and a function, and it as an
+      Function
+    </p>
+    <br />
+    <p>
+      <b>4. this:</b> In Global scope and inside a function this() refers to
+      <b><i>Gobal Object Window</i></b
+      >. In Strict mode, when we use any function then this() returns as
+      <i>undefined</i>. In Arrow function and in IIF it goes as
+      <i>Global Object Window</i>. Mostly it will go with Anonymous Function.
+    </p>
+    <br />
+    <button onclick="this">Click</button>
+    <br /><br />
+    <button onclick="trigger(this)">Click here</button>
+    <br /><br />
+    <script src="script.js"></script>
+  </body>
+</html>
