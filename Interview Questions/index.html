@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Questions</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <button onclick="create()">Click Here!</button>
+
+    <script>
+      let person = {
+        name: "Priya",
+      };
+
+      console.log(person);
+      console.log(person.prototype);
+
+      function create() {
+        let geeks = document.createElement("geeks");
+        geeks.textContent = "Geeksforgeeks";
+        geeks.setAttribute("class", "note");
+        document.body.appendChild(geeks);
+      }
+    </script>
+  </body>
+</html>
