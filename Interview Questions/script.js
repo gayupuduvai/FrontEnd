@@ -74,4 +74,13 @@ const memoizAddition = () => {
   console.log(addition(20)); //output: 40 calculated
   console.log(addition(20)); //output: 40 cached
 
+  // 5. 
+
+  let a = 10;
+if (true) {
+  let a = 20;
+  console.log(a, "inside");
+}
+console.log(a, "outside");
+
    

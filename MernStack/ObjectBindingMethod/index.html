@@ -34,6 +34,17 @@
     <br /><br />
     <button onclick="trigger(this)">Click here</button>
     <br /><br /> -->
-    <script src="object.js"></script>
+    <p id="demo">Fetch a file to change this text.</p>
+<script>
+
+let file = "fetch_info.txt"
+
+fetch (file)
+.then(x => x.text())
+// .then(y => document.getElementById("demo").innerHTML = y);
+.then(y => console.log(y));
+
+</script>
+    <script src="promise.js"></script>
   </body>
 </html>
