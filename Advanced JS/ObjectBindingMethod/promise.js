@@ -9,7 +9,7 @@
 
     console.log(fetchData);
 
-    let apiUrl = "https://jsonplaceholder.typicode.com/todos/1";
+    let apiUrl = "https://jsonplaceholder.typicode.com/users";
 
     fetch(apiUrl)
     .then(response => response.json())

@@ -9,7 +9,22 @@
   <body>
     <!-- <button onclick="create()">Click Here!</button> -->
 
+    <p>1. Find the missing values and it's count of an array l = [2, 5, 3, 0, 8].</p>
+
     <script>
+      // 1. Find the missing values and it's count of an array l = [2, 5, 3, 0, 8].
+      let l = [2, 5, 3, 0, 8];
+      let minValue = Math.min(...l);
+      let maxValue = Math.max(...l);
+      let missingValues = [];
+      for (let i = minValue; i <= maxValue; i++){
+        if(!l.includes(i)){
+          missingValues.push(i);
+        }
+      }
+      let missingCount = missingValues.length;
+      console.log("Missing Values: ", missingValues);
+      console.log("Count of Missing Values: ", missingCount);
       // let person = {
       //   name: "Priya",
       // };
