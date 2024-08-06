@@ -28,10 +28,10 @@ run().catch(console.dir);
 const studentScheme = new mongoose.Schema({
     name: {type: String, required: true},
     age: {type: Number, required: true},
-    location: {type: String, required: false},
+    location: {type: String, required: true},
 });
 
-const myDB = mongoose.connection.useDb("Mongodb Practice");
+const myDB = mongoose.connection.useDb("Mongodb_Practice");
 
 const StudentModel = myDB.model("student", studentScheme);
 
@@ -50,6 +50,19 @@ app.post("/add-student", async (req, res) => {
 });
 
 app.get("/get-students", async (req, res) => {
+  try {
+    const students = await StudentModel.find();
+
+    res.status(201).json({
+      status: "success",
+      message: "Student added successfully",
+      data: students,
+    });
+  } catch (error) {
+    res.status(400).json({ status: "error", message: error.message });
+  }
+});
+app.get("/", async (req, res) => {
   try {
     const students = await StudentModel.find();
 
