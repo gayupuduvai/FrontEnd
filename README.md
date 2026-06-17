@@ -18,5 +18,5 @@ react
 sass
 tailwind
 django
-mysql
+sql
 mongodb
